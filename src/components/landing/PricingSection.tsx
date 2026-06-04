@@ -79,14 +79,15 @@ const PricingSection = () => {
                 plan.highlighted ? "border-primary/40 ring-1 ring-primary/20" : "border-border"
               )}
             >
-              {plan.highlighted && (
-                <div className="absolute right-6 top-6 rounded-full bg-accent px-3 py-1 text-xs font-semibold text-accent-foreground">
-                  Recommended
+              <div className="space-y-3">
+                <div className="flex min-h-7 items-start justify-between gap-4">
+                  <h3 className="text-xl font-semibold text-foreground">{plan.name}</h3>
+                  {plan.highlighted && (
+                    <span className="shrink-0 rounded-full bg-accent px-3 py-1 text-xs font-semibold text-accent-foreground">
+                      Recommended
+                    </span>
+                  )}
                 </div>
-              )}
-
-              <div className="pr-24 md:pr-0 lg:pr-24">
-                <h3 className="text-xl font-semibold text-foreground">{plan.name}</h3>
                 <p className="mt-3 min-h-16 text-sm leading-relaxed text-muted-foreground">{plan.description}</p>
               </div>
 
