@@ -6,31 +6,52 @@ import { cn } from "@/lib/utils";
 
 const plans = [
   {
-    name: "Starter",
-    description: "For teams moving from manual order handling to one connected workspace.",
+    name: "Basic Plan",
+    description: "Perfect for getting started - launch your online store with essential features at a low cost.",
     price: "999",
     period: "/ month",
     cta: "Book a Demo",
     highlighted: false,
-    features: ["Core order management", "Catalog and pricing tools", "Basic storefront setup", "Email support"],
+    features: [
+      "Professional online store setup",
+      "Unlimited products and orders",
+      "SSL certificate",
+      "Free subdomain in Orders and More",
+      "Customizable themes",
+      "Wishlist for users",
+    ],
   },
   {
-    name: "Growth",
-    description: "For growing operations that need more automation, reporting, and support.",
+    name: "Professional Plan",
+    description: "Ideal for growing brands - unlock advanced tools to boost sales and streamline operations.",
     price: "Contact support",
     period: "",
     cta: "Contact Support",
     highlighted: true,
-    features: ["Everything in Starter", "Advanced discounts and rules", "Delivery workflow tools", "Analytics dashboard"],
+    features: [
+      "Stock tracking",
+      "Store admin dashboard",
+      "Device compatibility",
+      "Multi-language support",
+      "Preview edits before publishing",
+      "Cash on delivery",
+    ],
   },
   {
-    name: "Enterprise",
-    description: "For multi-branch, high-volume, or custom implementation requirements.",
+    name: "Enterprise Plan",
+    description: "For serious sellers - enjoy full access, integrations, and premium features for scaling your business.",
     price: "Contact support",
     period: "",
     cta: "Contact Support",
     highlighted: false,
-    features: ["Custom modules and integrations", "Guided launch planning", "Priority implementation support", "Dedicated success touchpoints"],
+    features: [
+      "Advanced analytics and reporting",
+      "SMS integration",
+      "Custom payment gateways",
+      "Adding custom pages",
+      "Product variations",
+      "Integration with couriers",
+    ],
   },
 ];
 
@@ -81,7 +102,7 @@ const PricingSection = () => {
                 {plan.period && <span className="text-sm font-medium text-muted-foreground">{plan.period}</span>}
               </div>
 
-              <ul className="mt-8 space-y-3 text-sm text-muted-foreground">
+              <ul className="mt-8 flex-1 space-y-3 text-sm text-muted-foreground">
                 {plan.features.map((feature) => (
                   <li key={feature} className="flex gap-3">
                     <Check className="mt-0.5 h-4 w-4 shrink-0 text-accent-foreground" />
