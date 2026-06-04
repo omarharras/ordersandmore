@@ -1,0 +1,4 @@
+project_id = "yupdazupnaajjbnwuhqi"
+
+[functions.notify-demo-request]
+verify_jwt = false
