@@ -5,6 +5,7 @@ import PainPointsSection from "@/components/landing/PainPointsSection";
 import OutcomesSection from "@/components/landing/OutcomesSection";
 import FeaturesSection from "@/components/landing/FeaturesSection";
 import UseCasesSection from "@/components/landing/UseCasesSection";
+import MobileAppSection from "@/components/landing/MobileAppSection";
 import HowItWorksSection from "@/components/landing/HowItWorksSection";
 
 import WhyUsSection from "@/components/landing/WhyUsSection";
@@ -48,6 +49,7 @@ const Index = () => {
       <OutcomesSection />
       <FeaturesSection />
       <UseCasesSection />
+      <MobileAppSection />
       <HowItWorksSection />
       
       <WhyUsSection />
